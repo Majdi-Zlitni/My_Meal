@@ -1,0 +1,30 @@
+
+  img.bg {
+    /* Set rules to fill background */
+    min-height: 60%;
+    min-width: 512px;
+      
+    /* Set up proportionate scaling */
+    width: 70%;
+    height: auto;
+    /*Scale image in specifec position*/
+    transform: scale(1.7);
+    transform-origin: 132% 0%;
+    background-position: 50% 50%;
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  @media screen and (max-width: 1024px) { /* Specific to this particular image */
+    img.bg {
+      left: 50%;
+      margin-left: -512px;   /* 50% */
+    }
+  }
+  .right{
+    position: fixed;
+    right: 0px;
+    width: 30%;
+  }

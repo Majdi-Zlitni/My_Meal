@@ -1,0 +1,106 @@
+a:link,a:visited,a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: white;
+
+}
+
+.parent{
+    position: relative;
+    top: 0;
+    right: 0;
+}
+.img1{
+    width: 58%;
+    height: 620;
+    float: right;
+}
+.img2{
+    opacity: 100%;
+    float: right;
+    width: 57.5%;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+.user{
+    position: absolute;
+    right: 8%;
+    padding:2.3vw;
+    font-size: 1vw;
+}
+.rec{
+    width: 12%;
+    position: absolute;
+    margin: 10;
+    padding: 1%;
+    right: 7%;
+
+
+}
+
+.header{
+    position: absolute;
+    right: 20%;
+    padding: 1%;
+    word-spacing: 10px;
+    font-size: 2vw;
+
+    
+
+}
+
+
+.food{
+    color: silver;
+    text-decoration: none;
+    position: absolute;
+    right: 480pt;
+    bottom: 560;
+    
+}
+.down{
+    position:absolute;
+  bottom: 0;
+  right: 50%;
+  width: 2%;
+}
+
+.titre{
+    color: rgb(0, 0, 0);
+    position: relative;
+    left: 5%;
+}
+.titre em{
+    color: rgb(255, 150, 30);
+}
+.button {
+    text-decoration: none;
+    /* Set up the hover */
+    /* If you aren't using autoprefix, remember to prefix the gradient for other browsers */
+    background-image: linear-gradient(rgb(255, 150, 30), rgb(255, 150, 30)), linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1));
+    background-size: 0 5px, auto;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    transition: all .2s ease-out;
+  }
+  
+
+.button:hover {
+    /* The following line makes the underline only as wide as the text */
+    background-size: calc(100% - 2em) 5px, auto;
+    background-size: 100% 5px, auto;
+  }
+  .noc{
+      margin: 0%;
+      padding: 5%;
+  }
+  .description{
+      color: rgb(0, 0, 0);
+  }
+  .description em{
+      color: rgb(255, 150, 30);
+  }
+  .des{
+   color:#707070;
+  }
