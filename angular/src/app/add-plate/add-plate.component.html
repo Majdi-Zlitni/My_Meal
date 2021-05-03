@@ -1,0 +1,48 @@
+<div class="container pt-5">
+    <div class="row pt-5">
+        <form>
+            <div class="row">
+                <div class="col-6 pt-5 text-center">
+
+                    <label for="avatar"><h6>Add an image of your plate</h6></label>
+                    <input type="file" name="avatar" accept="image/png, image/jpeg" (change)=onSelectFile($event) required>
+                    <div class="form-check form-switch">
+                        <div class="form-group">
+                            <input type="text" id="nom" class="form-control pt-2" placeholder="Dish Name" required />
+                            <label for="categorie">Choose a Category:</label>
+
+                            <select id="categorie" class="form-select" required>
+                                <option value="">Please choose an option--</option>
+                                <option value="Pasta">Pasta</option>
+                                <option value="In a rush">In a rush</option>
+                                <option value="Healthy">Healthy</option>
+                            </select>
+                            <textarea class="form-control mt-2" placeholder="Description" rows="3" id="description" required></textarea>
+                            <input type="number" id="prix" class="form-control mt-2" placeholder="Price (DT)" required/>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="offset-1 col-5 pt-5">
+                    <div class="form-check form-switch">
+                        <br>
+                        <br>
+                        <div class="form-group">
+                            <input type="text" id="resto" class="form-control" placeholder="Restaurant Name" required/>
+                            <textarea class="form-control mt-2" placeholder="Address" rows="5" id="address" required></textarea>
+                        </div>
+
+                    </div>
+                    <footer class="offset-10 pt-5 text-right">
+                        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                            <button type="button" class="btn btn-outline-success" (click)="Add()">Confirm</button>
+                        </div>
+                    </footer>
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+</div>

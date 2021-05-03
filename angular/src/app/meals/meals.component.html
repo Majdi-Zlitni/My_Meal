@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+        <div class="col-3" *ngFor="let meal of meals">
+
+            <img class="img-fluid px-2" src="{{meal.img}}" width="500" alt="">
+            <div class="form-check form-switch">
+                <div class="form-group mt-2">
+                    <input name="{{meal.id}}" type="text" class="form-control pt-2" value="{{meal.nom}}" required />
+                    <textarea name="{{meal.id}}" class="form-control mt-2" value="{{meal.description}}" rows="3" id="description" required></textarea>
+                    <input name="{{meal.id}}" type="number" id="prix" class="form-control mt-2" value="{{meal.prix}}" required/>
+                </div>
+
+            </div>
+            <div class="text-center">
+                <button name="{{meal.id}}" type="button" class="btn mx-4 btn-outline-secondary" (click)="Modify($event)">Modify</button>
+                <button name="{{meal.id}}" class=" btn btn-outline-danger mx-4" (click)="Delete($event)">Delete</button>
+            </div>
+        </div>
+
+    </div>
+</div>

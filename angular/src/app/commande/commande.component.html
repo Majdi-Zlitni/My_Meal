@@ -1,0 +1,43 @@
+<div id="delete" class="container">
+    <div class="row ">
+        <div class="offset-4 col-3 ">
+            <span><input type="text" id="id" class="form-control pt-2" placeholder="Id Command" required /></span>
+        </div>
+        <div class="col-1">
+            <button type="button" class="btn mx-4 btn-success" (click)="onclick()">Select</button>
+
+        </div>
+    </div>
+
+    <div class="row pt-2">
+        <div class="col-3 px-2 " *ngFor="let meal of meals">
+            <img class="img-fluid px-2" src="{{meal.img}}" width="500" alt="">
+            <h5 class="card-title text-center">{{meal.nom}}</h5>
+            <div class="row">
+                <label for="Prix">Price : </label>
+
+                <input name="{{meal.id}}" type="number" id="prix" class="form-control mt-2" value="{{meal.prix}}" disabled/>
+
+            </div>
+            <div class="row pt-2">
+                <label for="quantite">Quantity : </label>
+
+                <input name="{{meal.id}}" type="number" id="quantite" class="form-control mt-2" value="{{meal.quantite}}" required/>
+
+
+            </div>
+            <p class="pt-2">Total : {{meal.price}} DNT</p>
+            <div class="text-center pt-2">
+                <button name="{{meal.id}}" type="button" class="btn mx-4 btn-outline-secondary" (click)="Modify($event)">Modify</button>
+                <button name="{{meal.id}}" class=" btn btn-outline-danger mx-4" (click)="Delete($event)">Delete</button>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="row text-center">
+    </div>
+    <div class="offset-4"><button class=" btn btn-outline-danger mx-4" (click)="Deleteall($event)">Cancel Order</button>
+        <!--<button type="button" class="btn mx-4 btn-outline-secondary" (click)="ModifyTime($event)">Modify Time</button>
+        -->
+    </div>
