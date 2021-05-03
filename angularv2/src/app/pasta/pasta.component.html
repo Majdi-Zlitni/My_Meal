@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="desc">
+        <h3> Pasta's List</h3>
+      </div>
+    </div>
+  </div>
+  <div class="row" >
+    <div class="col-3" *ngFor="let rep of Pasta">
+     
+
+      <div class="col-3">
+        <div class=" hovereffect">
+          <h6>{{rep.nom}}</h6>
+          <img src="{{rep.img}}" class=" aab card-img-top pic" alt="...">
+          <div class="overlay ">
+            <h2>{{rep.prix}}Dt</h2>
+            <button class="info" href="#">Add to cart</button>>
+          </div>
+         
+        </div>
+      </div>
+      </div>
+     
