@@ -1,0 +1,10 @@
+div{ 
+    background: url(/assets/img/Signup/Repeat.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+em{
+    color: rgb(255, 150, 30);
+  }

@@ -1,0 +1,13 @@
+div{ 
+  background: url(/assets/img/Contactinfo/10882.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+em{
+  color: rgb(255, 150, 30);
+}
+ul.li{
+  color: white;
+}

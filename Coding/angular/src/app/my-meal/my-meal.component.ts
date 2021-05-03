@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-my-meal',
   templateUrl: './my-meal.component.html',
@@ -11,5 +12,7 @@ export class MyMealComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  navigateAssociates() {
+ 
+}
 }

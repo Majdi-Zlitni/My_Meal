@@ -1,62 +1,85 @@
 <div class="container">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <div class="row">
-        <div class="offset-9 col-3"><img class="img-fluid" src="assets/img/index/cart.png" alt="" style="float: right;"></div>
+        <div class="offset-9 col-3"><img class="img-fluid" src="assets/img/index/cart.png" alt="" style="float: right;">
+        </div>
     </div>
-    <h3>In a rush?</h3>
+    <h3 id="inarush">In a rush?</h3>
     <div class="row">
-        <div class="offset-9 col-3"><img class="img-fluid" src="assets/img/index/Polygon 1.png" style="position: relative; float: right; padding: 1%;" alt=""><img class="img-fluid" src="assets/img/index/Polygon 2.png" style="position: relative; float: right; padding: 1%;" alt=""></div>
-    </div>
-<div class="row">
-    <div class="col-3">
-    <img class="img-fluid" src="assets/img/index/img1.png" width="200" alt="">
-    </div>
-    <div class="col-3">
-    <img class="img-fluid" src="assets/img/index/img2.png" width="200" alt="">
-    </div>
-    <div class="col-3">
-    <img class="img-fluid" src="assets/img/index/img3.png" width="200" alt="">
-    </div>
-    <div class="col-3">      
-    <img class="img-fluid" src="assets/img/index/img4.png" width="200" alt="">
+        <div class="offset-9 col-3"><img class="img-fluid" src="assets/img/index/Polygon 1.png"
+                style="position: relative; float: right; padding: 1%;" alt=""><img class="img-fluid"
+                src="assets/img/index/Polygon 2.png" style="position: relative; float: right; padding: 1%;" alt="">
+        </div>
     </div>
 
-</div>
-<div class="row"><br></div>
-<div class="row"><h3>Traditional</h3></div>
-<div class="row">
-    <div class="offset-9 col-3"><img class="img-fluid" src="assets/img/index/Polygon 1.png" style="position: relative; float: right; padding: 1%;" alt=""><img class="img-fluid" src="assets/img/index/Polygon 2.png" style="position: relative; float: right; padding: 1%;" alt=""></div>
-</div>
-<div class="row">
-    <div class="col-3">
-<img class="img-fluid" src="assets/img/index/img5.png" width="200" alt="">
-    </div>
-    <div class="col-3">
-<img class="img-fluid" src="assets/img/index/img6.png" width="200" alt="">
-    </div>
-    <div class="col-3">
-<img class="img-fluid" src="assets/img/index/img7.png" width="200" alt="">
-    </div>
-    <div class="col-3">
-<img class="img-fluid" src="assets/img/index/img8.png" width="200" alt="">
-    </div>
-</div>
-<div class="row"><br></div>
-<div class="row"><h3>Healthy</h3></div>
-<div class="row">
-    <div class="offset-9 col-3"><img class="img-fluid" src="assets/img/index/Polygon 1.png" style="position: relative; float: right; padding: 1%;" alt=""><img class="img-fluid" src="assets/img/index/Polygon 2.png" style="position: relative; float: right; padding: 1%;" alt=""></div>
-</div>
-<div class="row">
-    <div class="col-3">
-        <img class="img-fluid" src="assets/img/index/img9.png" width="200" alt="">
-    </div>
-    <div class="col-3">
-        <img class="img-fluid" src="assets/img/index/img10.png" width="200" alt="">
-    </div>
-    <div class="col-3">
-        <img class="img-fluid" src="assets/img/index/img11.png" width="200" alt="">
-    </div>
-    <div class="col-3">
-        <img class="img-fluid" src="assets/img/index/img12.png" width="200" alt="">
+    <div class="row">
+        <div class="col-3" *ngFor="let rep of fastfood">
+            <div class=" hovereffect">
+                <h6>{{rep.nom}}</h6>
+                <img src="{{rep.img}}" width="200" class="card-img-top pic" alt="...">
+                <div class="overlay">
+                    <h2>{{rep.prix}}Dt</h2>
+                    <a class="info" href="#">View</a>
+                </div>
+            </div>
+        </div>
+
+
     </div>
     <div class="row"><br></div>
+    <div class="row">
+        <h3>Traditional</h3>
     </div>
+    <div class="row">
+        <div class="offset-9 col-3"><img class="img-fluid" src="assets/img/index/Polygon 1.png"
+                style="position: relative; float: right; padding: 1%;" alt=""><img class="img-fluid"
+                src="assets/img/index/Polygon 2.png" style="position: relative; float: right; padding: 1%;" alt="">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3" *ngFor="let rep2 of trafood">
+            <div class=" hovereffect">
+                <h6>{{rep2.nom}}</h6>
+                <img src="{{rep2.img}}" width="200" class="card-img-top pic">
+                <div class="overlay">
+                    <h2>{{rep2.prix}}Dt</h2>
+                    <a class="info" href="#">View</a>
+                </div>
+            </div>
+        </div>
+        <div class="row"><br></div>
+        <div class="row">
+            <h3>Healthy</h3>
+        </div>
+        <div class="row">
+            <div class="offset-9 col-3"><img class="img-fluid" src="assets/img/index/Polygon 1.png"
+                    style="position: relative; float: right; padding: 1%;" alt=""><img class="img-fluid"
+                    src="assets/img/index/Polygon 2.png" style="position: relative; float: right; padding: 1%;" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3" *ngFor="let rep3 of trafood">
+                <div class=" hovereffect">
+                    <h6>{{rep3.nom}}</h6>
+                    <img src="{{rep3.img}}" width="200" class="card-img-top pic">
+                    <div class="overlay">
+                        <h2>{{rep3.prix}}Dt</h2>
+                        <a class="info" href="#">View</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row"><br></div>
